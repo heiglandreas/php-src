@@ -13,4 +13,5 @@ $link = ldap_connect($host, $port);
 var_dump($link);
 ?>
 --EXPECTF--
+Deprecated: Usage of ldap_connect with two arguments is deprecated. in %s on line %d
 resource(%d) of type (ldap link)

@@ -16,5 +16,6 @@ try {
     echo $e->getMessage(), "\n";
 }
 ?>
---EXPECT--
+--EXPECTF--
+Deprecated: Usage of ldap_connect with two arguments is deprecated. in %s on line %d
 ldap_first_attribute(): supplied resource is not a valid ldap result entry resource

@@ -31,6 +31,7 @@ foreach ($controls as $control)
 var_dump(ldap_set_option($link, 999999, 999999));
 ?>
 --EXPECTF--
+Deprecated: Usage of ldap_connect with two arguments is deprecated. in %s on line %d
 bool(false)
 
 Warning: ldap_set_option(): Control must have an oid key in %s on line %d
