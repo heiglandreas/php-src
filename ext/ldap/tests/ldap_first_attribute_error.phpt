@@ -9,13 +9,12 @@ Patrick Allaert <patrickallaert@php.net>
 <?php
 require "connect.inc";
 
-$link = ldap_connect($host, $port);
+$link = ldap_connect($uri);
 try {
     var_dump(ldap_first_attribute($link, $link));
 } catch (TypeError $e) {
     echo $e->getMessage(), "\n";
 }
 ?>
---EXPECTF--
-Deprecated: Usage of ldap_connect with two arguments is deprecated. in %s on line %d
+--EXPECT--
 ldap_first_attribute(): supplied resource is not a valid ldap result entry resource

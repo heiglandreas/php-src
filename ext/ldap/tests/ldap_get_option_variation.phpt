@@ -9,7 +9,7 @@ Patrick Allaert <patrickallaert@php.net>
 <?php
 require "connect.inc";
 
-$link = ldap_connect($host, $port);
+$link = ldap_connect($uri);
 $option = null;
 
 $controls = array(
@@ -49,7 +49,6 @@ var_dump(
 );
 ?>
 --EXPECTF--
-Deprecated: Usage of ldap_connect with two arguments is deprecated. in %s on line %d
 bool(true)
 int(0)
 bool(true)

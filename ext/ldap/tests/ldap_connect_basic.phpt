@@ -9,9 +9,8 @@ Patrick Allaert <patrickallaert@php.net>
 <?php
 require "connect.inc";
 
-$link = ldap_connect($host, $port);
+$link = ldap_connect($uri);
 var_dump($link);
 ?>
 --EXPECTF--
-Deprecated: Usage of ldap_connect with two arguments is deprecated. in %s on line %d
 resource(%d) of type (ldap link)
